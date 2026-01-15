@@ -2,7 +2,7 @@
 let knowledgeBase = [];
 
 // Cargar preguntas y respuestas una sola vez
-fetch("./qa.json")
+fetch("https://boorjanunezz.github.io/qna-valorant/qa.json")
   .then(response => response.json())
   .then(data => {
     knowledgeBase = data;
@@ -90,3 +90,4 @@ document.getElementById("questionInput").addEventListener("keydown", event => {
     askQuestion();
   }
 });
+
